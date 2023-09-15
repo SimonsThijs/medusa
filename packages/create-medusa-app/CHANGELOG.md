@@ -1,5 +1,18 @@
 # Change Log
 
+## 1.2.0
+
+### Minor Changes
+
+- [#4968](https://github.com/medusajs/medusa/pull/4968) [`240b03800`](https://github.com/medusajs/medusa/commit/240b038006924d4872de068c98e2d6862145cb52) Thanks [@shahednasser](https://github.com/shahednasser)! - feat(create-medusa-app): add install Next.js storefront option
+
+## 1.1.1
+
+### Patch Changes
+
+- Updated dependencies [[`c58588904`](https://github.com/medusajs/medusa/commit/c58588904c5631111603b15afacf7cdc4c738cc4)]:
+  - medusa-telemetry@0.0.17
+
 ## 1.1.0
 
 ### Minor Changes
