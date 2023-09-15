@@ -28,8 +28,11 @@ export const useCustomerColumns = () => {
         accessor: "email",
       },
       {
-        Header: "",
-        accessor: "col",
+        Header: t("customer-table-organisation", "Organisation"),
+        accessor: "shipping_addresses",
+        Cell: ({ cell: { value } }) => (
+          <div className="text-right">{value?.length || 0}</div>
+        ),
       },
       {
         accessor: "orders",
