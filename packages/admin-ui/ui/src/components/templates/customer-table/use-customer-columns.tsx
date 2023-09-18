@@ -29,10 +29,12 @@ export const useCustomerColumns = () => {
       },
       {
         Header: t("customer-table-organisation", "Organisation"),
-        accessor: "shipping_addresses",
-        Cell: ({ cell: { value } }) => (
-          <div className="text-right">{value?.length || 0}</div>
-        ),
+        accessor: "customer_",
+        Cell: ({ row }) => {
+          if(row?.original.shipping_addresses?.length > 0) return row?.original.shipping_addresses[0].company
+          else if (row?.original.billing_address) return row?.original.billing_address.company
+          else return null
+        },
       },
       {
         accessor: "orders",

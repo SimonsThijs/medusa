@@ -15,7 +15,7 @@ import { useCustomerFilters } from "./use-customer-filters"
 const DEFAULT_PAGE_SIZE = 15
 
 const defaultQueryProps = {
-  expand: "orders",
+  expand: "orders,shipping_addresses,billing_address",
 }
 
 const CustomerTable = () => {
@@ -53,6 +53,8 @@ const CustomerTable = () => {
   }, [count])
 
   const [columns] = useCustomerColumns()
+
+  console.log(customers)
 
   const {
     getTableProps,
