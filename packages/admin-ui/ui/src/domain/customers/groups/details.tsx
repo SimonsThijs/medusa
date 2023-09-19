@@ -244,6 +244,7 @@ function CustomerGroupDetailsHeader(props: CustomerGroupDetailsHeaderProps) {
 function CustomerGroupDetails() {
   const { id } = useParams()
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   const { customer_group, isLoading, error } = useAdminCustomerGroup(id!)
   const { getWidgets } = useWidgets()
