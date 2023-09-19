@@ -61,6 +61,8 @@ type CustomerGroupCustomersListProps = { group: CustomerGroup }
  * Customer groups list container.
  */
 function CustomerGroupCustomersList(props: CustomerGroupCustomersListProps) {
+  const { t } = useTranslation()
+  
   const groupId = props.group.id
 
   // toggle to show/hide "edit customers" modal
